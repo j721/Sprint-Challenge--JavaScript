@@ -9,14 +9,14 @@
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
 
-const tyran ={
+const tyran = {
   name: 'tyrannosaurus',
   diet: 'carnivorous',
   weight: `7000kg`,
   length: `12m`,
   period: `Late Cretaceous`,
 
-  roar: function(){
+  roar: () => {
     return `RAWERSRARARWERSARARARRRR!`;
   }
 
@@ -24,7 +24,7 @@ const tyran ={
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
-const stego ={
+const stego = {
   name: 'stegosaurus',
   diet: 'herbivorous',
   weight: `2000kg`,
@@ -34,7 +34,7 @@ const stego ={
 
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
 
-const veloc ={
+const veloc = {
   name: 'velociraptor',
   diet: 'carnivorous',
   weight: `15kg`,

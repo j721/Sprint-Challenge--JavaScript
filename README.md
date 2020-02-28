@@ -30,13 +30,55 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+        .map() method returns a new array 
+            -alters data without manipulating the original array
+            -needs a return keyword
+
+    .forEach() method does not return a new array. Alters the original array
+        -return keyword is optional
+        -it must iterate through every item in an array without stopping
+
+
 2. What is the difference between a function and a method?
 
+    a function is a block of code designed to execute a specific task that can store memory and be reused later
+
+    A method is a type of function, which happens to be the property of an object
+
+
 3. What is closure?
+  
+    combination of a function, and the lexical environment within which that function has been declared. 
+
+    Closure gives you access to an outer function’s scope from an inner function
+
+    Meaning a variable defined outside the function can be accessed inside another function after variable declaration, but the opposite is not true
+
 
 4. Describe the four rules of the 'this' keyword.
+    
+    1. First Principle: Window/global Object Binding
+      The value of "this" will be the window/console Object; when in global scope.
+
+    2. Implicit Binding
+        Only applies to objects with methods. "This" is referring to the left of the dot notation When function is being invoked. 
+        The most commonly used rule found in 80% of use cases of "this" 
+
+    3. New Binding
+        The new keyword constructs a new object and "this" points to the new object.
+        When a function is invoked as a constructor function using the new keyword 
+            -"this" points to the new object that is created and returned by the constructor function
+
+    4. Explicit Binding
+        The call method, apply, and bind method when used on a function allow us to explicitly state what the "this" keyword refers to 
+
+
+
 
 5. Why do we need super() in an extended class?
+
+    We use super() to call the constructor of the parent class, to be able to access the parent’s properties and methods for the child class
+
 
 ## Project Set up
 
